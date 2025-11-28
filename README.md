@@ -20,9 +20,7 @@ The processor supports a compact 12-bit instruction format, enabling arithmetic,
 | **NEG R**      | 2’s complement | `01 RRR 0000000`        | R ← –R           |
 | **JZR R, d**   | Jump if zero   | `11 RRR 0000 ddd`       | If R==0 → PC ← d |
 
-<h2>🧱 Architecture Diagram</h2>
-<details> <summary><strong>Click to Expand Architecture Overview</strong> 🔽</summary> <br>
-<h3>🔧 Major Components</h3>
+<h2>🔧 Major Components</h2>
 
 * Program Counter (PC) — 3-bit, jump-enabled
 
@@ -45,14 +43,6 @@ The processor supports a compact 12-bit instruction format, enabling arithmetic,
 <h2>⚙️ Features</h2>
 <ul style="font-size: 16px;"> <li>🟦 <strong>Modular VHDL Design</strong> — clean separation of components</li> <li>⚡ <strong>Carry Lookahead ALU</strong> for faster operations</li> <li>🔁 <strong>Full instruction cycle</strong> (Fetch → Decode → Execute → Writeback)</li> <li>🧪 <strong>All modules testbench-verified</strong> with waveforms</li> <li>💡 <strong>BASYS-3 FPGA implementation</strong> with LED & 7-segment output</li> </ul>
 
-<h2>📂 Repository Structure</h2>
-📦 4-bit-nano-processor
-├── src/                # All VHDL source modules
-├── sim/                # Testbenches
-├── constraints/        # Basys-3 .xdc file
-├── docs/               # Lab report, schematics, diagrams
-└── top/                # Full processor integration
-
 <h2>🧪 Simulation & Testing</h2>
 
 ✔ Individual testbenches for PC, ROM, Register Bank, ALU, MUXes
@@ -63,4 +53,25 @@ The processor supports a compact 12-bit instruction format, enabling arithmetic,
 
 ✔ Real FPGA testing on BASYS-3 development board
 
+<h2>🚀 How to Run</h2>
+🔧 1. Open in Vivado
 
+   * Create a new Vivado project
+
+   * Add all .vhd files from src/
+
+   * Set NanoProcessor as the top module
+
+▶️ 2. Run Simulation
+
+   * Add testbenches from sim/
+
+   * Run behavioral simulation
+
+💡 3. FPGA Deployment
+
+   * Use the .xdc constraint file
+
+   * Generate bitstream
+
+   * Program FPGA
