@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc -all outputs/nano_processor.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

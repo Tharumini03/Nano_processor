@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat May 17 04:48:09 2025
+# Process ID: 19828
+# Current directory: R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22568 R:\ACADAMICS\SEM 02\CIRCUIT DESIGN\nano_processor -repeated addition in same pc\nano_processor.xpr
+# Log file: R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc/vivado.log
+# Journal file: R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc/nano_processor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_NanoProcessor.tcl
+close_sim

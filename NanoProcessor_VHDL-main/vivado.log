@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May  6 16:43:36 2025
+# Process ID: 12596
+# Current directory: C:/Mac/Home/Desktop/NanoProcessor_VHDL-main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1744 C:\Mac\Home\Desktop\NanoProcessor_VHDL-main\Nano_processor.xpr
+# Log file: C:/Mac/Home/Desktop/NanoProcessor_VHDL-main/vivado.log
+# Journal file: C:/Mac/Home/Desktop/NanoProcessor_VHDL-main\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Mac/Home/Desktop/NanoProcessor_VHDL-main/Nano_processor.xpr
+INFO: [Project 1-313] Project file moved from 'D:/sem 2/Computer Organization and Degital Design/Nano_processor' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 879.371 ; gain = 157.926
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 11 12:14:00 2025...

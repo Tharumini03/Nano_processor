@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+50 true R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor/nano_processor.srcs/sim_1/new/Nano_Processor_TB.vhd

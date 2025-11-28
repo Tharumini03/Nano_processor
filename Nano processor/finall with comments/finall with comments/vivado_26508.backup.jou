@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat May 17 18:29:47 2025
+# Process ID: 26508
+# Current directory: R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc -all outputs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8752 R:\ACADAMICS\SEM 02\CIRCUIT DESIGN\nano_processor -repeated addition in same pc -all outputs\nano_processor.xpr
+# Log file: R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc -all outputs/vivado.log
+# Journal file: R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc -all outputs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc -all outputs/nano_processor.xpr}
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {{R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc -all outputs/constraint_nanop.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 9
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_NanoProcessor.tcl
+export_ip_user_files -of_objects  [get_files {{R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc -all outputs/constraint_nanop.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{R:/ACADAMICS/SEM 02/CIRCUIT DESIGN/nano_processor -repeated addition in same pc -all outputs/constraint_nanop.xdc}}
+add_files -fileset constrs_1 -norecurse C:/Users/ruzai/Desktop/constraint_nanop.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 9
+wait_on_run synth_1
+launch_runs impl_1 -jobs 9
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+reset_run impl_1
+launch_runs impl_1 -jobs 9
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 9
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 9
+wait_on_run synth_1
+launch_runs impl_1 -jobs 9
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 9
+wait_on_run synth_1
+launch_runs impl_1 -jobs 9
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 9
+wait_on_run impl_1
